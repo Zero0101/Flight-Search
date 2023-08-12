@@ -23,12 +23,16 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavType
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.example.flightsearch.R
 import com.example.flightsearch.data.Airport
 import com.example.flightsearch.ui.theme.FlightSearchTheme
 
-enum class HomeScreen () {
+enum class HomeScreen {
     HomeScreen,
     ListOfAirports
 }
@@ -54,18 +58,30 @@ fun HomeScreen(
                 label = { Text("Input your search request") },
                 modifier = Modifier.fillMaxWidth()
             )
-            /*NavHost(
+            NavHost(
                 navController = navController,
-                startDestination = HomeScreen.HomeScreen.name) {
+                startDestination = HomeScreen.HomeScreen.name
+            ) {
                 composable(HomeScreen.HomeScreen.name) {
                     if (viewModel.searchRequest.isEmpty()) FavoriteFlightsScreen()
-                    else AirportsScreen(airports = airportsList)
+                    else AirportsScreen(
+                        airports = airportsList,
+                        onAirportClick = {
+                            val route = "${HomeScreen.ListOfAirports.name}/$it"
+                            navController.navigate(route)
+                        }
+                    )
                 }
-                composable(HomeScreen.ListOfAirports.name) {
-                    FlightsFromAirport()
+                var airportRouteArg = "airportRoute"
+                composable(
+                    route = HomeScreen.ListOfAirports.name + "/{$airportRouteArg}",
+                    arguments = listOf(navArgument(airportRouteArg) { type = NavType.StringType })
+                ) { backStackEntry ->
+                    val airportIataCode = backStackEntry.arguments?.getString(airportRouteArg)
+                        ?: error("airportRouteArgument cannot be null")
+                    FlightsFromAirport(airportIataCode)
                 }
-            }*/
-            FlightsFromAirport("FCO")
+            }
         }
     }
 }
@@ -73,7 +89,7 @@ fun HomeScreen(
 @Composable
 fun AirportsScreen(
     airports: List<Airport>,
-    onAirportClick: () -> Unit,
+    onAirportClick: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
     LazyColumn(modifier = modifier, contentPadding = PaddingValues(vertical = 8.dp)) {
@@ -85,7 +101,9 @@ fun AirportsScreen(
                         vertical = 16.dp,
                         horizontal = 16.dp
                     )
-                    .clickable { },
+                    .clickable(enabled = true) {
+                        onAirportClick.invoke(it.iataCode)
+                    },
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 Text(
@@ -114,6 +132,16 @@ fun FlightSearchTopAppBar(modifier: Modifier = Modifier) {
 @Composable
 fun HomeScreenPreview() {
     FlightSearchTheme {
-        HomeScreen()
+        AirportsScreen(
+            airports = List(3) { index ->
+                Airport(
+                    index,
+                    "Iata Code",
+                    "Name of Airport",
+                    11111
+                )
+            },
+            onAirportClick = {}
+        )
     }
 }

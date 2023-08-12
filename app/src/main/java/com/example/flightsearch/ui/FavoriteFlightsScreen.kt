@@ -1,5 +1,6 @@
 package com.example.flightsearch.ui
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -9,16 +10,22 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Star
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.flightsearch.R
+import com.example.flightsearch.data.Airport
 import com.example.flightsearch.data.Favorite
+import com.example.flightsearch.ui.theme.FlightSearchTheme
 
 @Composable
 fun FavoriteFlightsScreen(
@@ -53,10 +60,16 @@ fun ListOfFlightsScreen(listOfFlights: List<Favorite>) {
 @Composable
 fun FlightFromTo(
     flight: Favorite,
-    airportViewModel: HomeScreenViewModel = viewModel(factory = HomeScreenViewModel.factory)
+    airportViewModel: HomeScreenViewModel = viewModel(factory = HomeScreenViewModel.factory),
+    favoriteViewModel: FavoriteFlightsScreenViewModel = viewModel(factory = FavoriteFlightsScreenViewModel.factory)
 ) {
+    val favoriteList by favoriteViewModel.getFavorites().collectAsState(emptyList())
+    val inFavorites = favoriteList.map { Pair(it.departureCode, it.destinationCode) }
+        .contains(Pair(flight.departureCode, flight.destinationCode))
     Row(modifier = Modifier.fillMaxWidth()){
-        Column {
+        Column(
+            modifier = Modifier.weight(5f)
+        ) {
             Text(text = "DEPART")
             Row {
                 Text(text = flight.departureCode)
@@ -68,6 +81,18 @@ fun FlightFromTo(
                 Text(text = airportViewModel.getNameByIataCode(flight.destinationCode))
             }
         }
-        Icon(imageVector = Icons.Rounded.Star, contentDescription = stringResource(R.string.star))
+        IconButton(
+            onClick = {
+                if (inFavorites) favoriteViewModel.removeFromFavorite(flight)
+                else favoriteViewModel.addToFavorite(flight)
+            },
+            modifier = Modifier.weight(1f)
+        ){
+            Icon(
+                imageVector = Icons.Rounded.Star,
+                contentDescription = stringResource(R.string.star),
+                tint = if (inFavorites) Color.Red else LocalContentColor.current,
+            )
+        }
     }
 }
