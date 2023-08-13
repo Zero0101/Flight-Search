@@ -84,6 +84,7 @@ fun FlightSearchTheme(
 
     MaterialTheme(
         colorScheme = colors,
-        content = content
+        content = content,
+        shapes = Shapes
     )
 }
