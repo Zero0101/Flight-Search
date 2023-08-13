@@ -42,7 +42,8 @@ enum class HomeScreen {
 fun HomeScreen(
     viewModel: HomeScreenViewModel = viewModel(factory = HomeScreenViewModel.factory )
 ) {
-    val airportsList by viewModel.getAirports().collectAsState(emptyList())
+    val searchRequest by viewModel.userPreferencesFlow.collectAsState(initial = "")
+    val airportsList by viewModel.getAirports(searchRequest = searchRequest).collectAsState(emptyList())
     val navController = rememberNavController()
     Scaffold(
         topBar = { FlightSearchTopAppBar() }
@@ -53,8 +54,8 @@ fun HomeScreen(
                 .fillMaxSize()
         ) {
             TextField(
-                value = viewModel.searchRequest,
-                onValueChange = { viewModel.updateSearchRequest(it) },
+                value = searchRequest,
+                onValueChange = { viewModel.saveUserSearchRequest(it) },
                 label = { Text("Input your search request") },
                 modifier = Modifier.fillMaxWidth()
             )
@@ -63,7 +64,7 @@ fun HomeScreen(
                 startDestination = HomeScreen.HomeScreen.name
             ) {
                 composable(HomeScreen.HomeScreen.name) {
-                    if (viewModel.searchRequest.isEmpty()) FavoriteFlightsScreen()
+                    if (searchRequest.isEmpty()) FavoriteFlightsScreen()
                     else AirportsScreen(
                         airports = airportsList,
                         onAirportClick = {
@@ -72,12 +73,12 @@ fun HomeScreen(
                         }
                     )
                 }
-                var airportRouteArg = "airportRoute"
+                val airportRouteArg = "airportRoute"
                 composable(
                     route = HomeScreen.ListOfAirports.name + "/{$airportRouteArg}",
                     arguments = listOf(navArgument(airportRouteArg) { type = NavType.StringType })
                 ) { backStackEntry ->
-                    if (viewModel.searchRequest.isEmpty()) FavoriteFlightsScreen()
+                    if (searchRequest.isEmpty()) FavoriteFlightsScreen()
                     else {
                         val airportIataCode = backStackEntry.arguments?.getString(airportRouteArg)
                             ?: error("airportRouteArgument cannot be null")
