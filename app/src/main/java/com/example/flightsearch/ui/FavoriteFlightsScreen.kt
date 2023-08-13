@@ -32,7 +32,10 @@ fun FavoriteFlightsScreen(
     favoriteViewModel: FavoriteFlightsScreenViewModel = viewModel(factory = FavoriteFlightsScreenViewModel.factory)
 ) {
     val favoriteList by favoriteViewModel.getFavorites().collectAsState(emptyList())
-    ListOfFlightsScreen(listOfFlights = favoriteList)
+    Column{
+        Text(text = "Favorite routes")
+        ListOfFlightsScreen(listOfFlights = favoriteList)
+    }
 }
 
 @Composable
@@ -45,7 +48,10 @@ fun FlightsFromAirport(
     for (i in listIataCodes.indices) {
         listOfFlights.add(Favorite(i + 1, iataCode, listIataCodes[i]))
     }
-    ListOfFlightsScreen(listOfFlights = listOfFlights)
+    Column {
+        Text(text = "Flights from $iataCode")
+        ListOfFlightsScreen(listOfFlights = listOfFlights)
+    }
 }
 
 @Composable

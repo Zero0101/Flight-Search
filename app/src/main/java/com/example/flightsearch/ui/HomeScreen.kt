@@ -77,9 +77,12 @@ fun HomeScreen(
                     route = HomeScreen.ListOfAirports.name + "/{$airportRouteArg}",
                     arguments = listOf(navArgument(airportRouteArg) { type = NavType.StringType })
                 ) { backStackEntry ->
-                    val airportIataCode = backStackEntry.arguments?.getString(airportRouteArg)
-                        ?: error("airportRouteArgument cannot be null")
-                    FlightsFromAirport(airportIataCode)
+                    if (viewModel.searchRequest.isEmpty()) FavoriteFlightsScreen()
+                    else {
+                        val airportIataCode = backStackEntry.arguments?.getString(airportRouteArg)
+                            ?: error("airportRouteArgument cannot be null")
+                        FlightsFromAirport(airportIataCode)
+                    }
                 }
             }
         }
