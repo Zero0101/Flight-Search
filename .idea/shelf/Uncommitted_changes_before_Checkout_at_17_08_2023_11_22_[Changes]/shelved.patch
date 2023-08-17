@@ -1,0 +1,84 @@
+Index: app/src/main/java/com/example/flightsearch/ui/HomeScreenViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.flightsearch.ui\r\n\r\nimport androidx.lifecycle.ViewModel\r\nimport androidx.lifecycle.ViewModelProvider\r\nimport androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.APPLICATION_KEY\r\nimport androidx.lifecycle.viewModelScope\r\nimport androidx.lifecycle.viewmodel.initializer\r\nimport androidx.lifecycle.viewmodel.viewModelFactory\r\nimport com.example.flightsearch.FlightSearchApplication\r\nimport com.example.flightsearch.data.Airport\r\nimport com.example.flightsearch.data.AirportDao\r\nimport com.example.flightsearch.data.UserPreferencesRepository\r\nimport kotlinx.coroutines.delay\r\nimport kotlinx.coroutines.flow.Flow\r\nimport kotlinx.coroutines.launch\r\n\r\n\r\nclass HomeScreenViewModel(\r\n    private val airportDao: AirportDao,\r\n    private val userPreferencesRepository: UserPreferencesRepository\r\n    ): ViewModel() {\r\n\r\n    val userPreferencesFlow =  userPreferencesRepository.userSearchRequest\r\n\r\n    fun getNameByIataCode(iataCode: String): String = airportDao.getNameByIataCode(iataCode)\r\n\r\n    fun getListOfIataCodes(iataCode: String): List<String> = airportDao.getIataCodes(iataCode)\r\n\r\n    fun getAirports(searchRequest: String): Flow<List<Airport>> {\r\n        return if (searchRequest.isNotEmpty()) airportDao.getItems(\"%$searchRequest%\")\r\n        else airportDao.getItems(searchRequest)\r\n    }\r\n\r\n    fun saveUserSearchRequest(userSearchRequest: String) {\r\n        viewModelScope.launch {\r\n            userPreferencesRepository.saveUserSearchRequest(userSearchRequest)\r\n        }\r\n    }\r\n\r\n    companion object {\r\n        val factory:ViewModelProvider.Factory = viewModelFactory {\r\n            initializer {\r\n                val application = (this[APPLICATION_KEY] as FlightSearchApplication)\r\n                HomeScreenViewModel(\r\n                    application.database.airportDao(),\r\n                    application.userPreferencesRepository\r\n                )\r\n            }\r\n        }\r\n    }\r\n}
+===================================================================
+diff --git a/app/src/main/java/com/example/flightsearch/ui/HomeScreenViewModel.kt b/app/src/main/java/com/example/flightsearch/ui/HomeScreenViewModel.kt
+--- a/app/src/main/java/com/example/flightsearch/ui/HomeScreenViewModel.kt	
++++ b/app/src/main/java/com/example/flightsearch/ui/HomeScreenViewModel.kt	
+@@ -1,5 +1,6 @@
+ package com.example.flightsearch.ui
+ 
++import androidx.compose.runtime.collectAsState
+ import androidx.lifecycle.ViewModel
+ import androidx.lifecycle.ViewModelProvider
+ import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.APPLICATION_KEY
+@@ -10,8 +11,10 @@
+ import com.example.flightsearch.data.Airport
+ import com.example.flightsearch.data.AirportDao
+ import com.example.flightsearch.data.UserPreferencesRepository
++import kotlinx.coroutines.CoroutineScope
+ import kotlinx.coroutines.delay
+ import kotlinx.coroutines.flow.Flow
++import kotlinx.coroutines.flow.stateIn
+ import kotlinx.coroutines.launch
+ 
+ 
+@@ -20,7 +23,7 @@
+     private val userPreferencesRepository: UserPreferencesRepository
+     ): ViewModel() {
+ 
+-    val userPreferencesFlow =  userPreferencesRepository.userSearchRequest
++    val userPreferencesFlow = userPreferencesRepository.userSearchRequest
+ 
+     fun getNameByIataCode(iataCode: String): String = airportDao.getNameByIataCode(iataCode)
+ 
+Index: app/src/main/java/com/example/flightsearch/ui/HomeScreen.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.flightsearch.ui\r\n\r\nimport androidx.compose.foundation.clickable\r\nimport androidx.compose.foundation.layout.Arrangement\r\nimport androidx.compose.foundation.layout.Column\r\nimport androidx.compose.foundation.layout.PaddingValues\r\nimport androidx.compose.foundation.layout.Row\r\nimport androidx.compose.foundation.layout.fillMaxSize\r\nimport androidx.compose.foundation.layout.fillMaxWidth\r\nimport androidx.compose.foundation.layout.padding\r\nimport androidx.compose.foundation.lazy.LazyColumn\r\nimport androidx.compose.foundation.lazy.items\r\nimport androidx.compose.material3.CenterAlignedTopAppBar\r\nimport androidx.compose.material3.ExperimentalMaterial3Api\r\nimport androidx.compose.material3.Scaffold\r\nimport androidx.compose.material3.Text\r\nimport androidx.compose.material3.TextField\r\nimport androidx.compose.runtime.Composable\r\nimport androidx.compose.runtime.collectAsState\r\nimport androidx.compose.runtime.getValue\r\nimport androidx.compose.ui.Modifier\r\nimport androidx.compose.ui.res.stringResource\r\nimport androidx.compose.ui.text.font.FontWeight.Companion.Bold\r\nimport androidx.compose.ui.tooling.preview.Preview\r\nimport androidx.compose.ui.unit.dp\r\nimport androidx.lifecycle.viewmodel.compose.viewModel\r\nimport androidx.navigation.NavType\r\nimport androidx.navigation.compose.NavHost\r\nimport androidx.navigation.compose.composable\r\nimport androidx.navigation.compose.rememberNavController\r\nimport androidx.navigation.navArgument\r\nimport com.example.flightsearch.R\r\nimport com.example.flightsearch.data.Airport\r\nimport com.example.flightsearch.ui.theme.FlightSearchTheme\r\n\r\nenum class HomeScreen {\r\n    HomeScreen,\r\n    ListOfAirports\r\n}\r\n\r\n@OptIn(ExperimentalMaterial3Api::class)\r\n@Composable\r\nfun HomeScreen(\r\n    viewModel: HomeScreenViewModel = viewModel(factory = HomeScreenViewModel.factory )\r\n) {\r\n    val searchRequest by viewModel.userPreferencesFlow.collectAsState(initial = \"\")\r\n    val airportsList by viewModel.getAirports(searchRequest = searchRequest).collectAsState(emptyList())\r\n    val navController = rememberNavController()\r\n    Scaffold(\r\n        topBar = { FlightSearchTopAppBar() }\r\n    ) { innerPadding ->\r\n        Column(\r\n            modifier = Modifier\r\n                .padding(innerPadding)\r\n                .fillMaxSize()\r\n        ) {\r\n            TextField(\r\n                value = searchRequest,\r\n                onValueChange = { viewModel.saveUserSearchRequest(it) },\r\n                label = { Text(\"Input your search request\") },\r\n                modifier = Modifier.fillMaxWidth()\r\n            )\r\n            NavHost(\r\n                navController = navController,\r\n                startDestination = HomeScreen.HomeScreen.name\r\n            ) {\r\n                composable(HomeScreen.HomeScreen.name) {\r\n                    if (searchRequest.isEmpty()) FavoriteFlightsScreen()\r\n                    else AirportsScreen(\r\n                        airports = airportsList,\r\n                        onAirportClick = {\r\n                            val route = \"${HomeScreen.ListOfAirports.name}/$it\"\r\n                            navController.navigate(route)\r\n                        }\r\n                    )\r\n                }\r\n                val airportRouteArg = \"airportRoute\"\r\n                composable(\r\n                    route = HomeScreen.ListOfAirports.name + \"/{$airportRouteArg}\",\r\n                    arguments = listOf(navArgument(airportRouteArg) { type = NavType.StringType })\r\n                ) { backStackEntry ->\r\n                    if (searchRequest.isEmpty()) FavoriteFlightsScreen()\r\n                    else {\r\n                        val airportIataCode = backStackEntry.arguments?.getString(airportRouteArg)\r\n                            ?: error(\"airportRouteArgument cannot be null\")\r\n                        FlightsFromAirport(airportIataCode)\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n@Composable\r\nfun AirportsScreen(\r\n    airports: List<Airport>,\r\n    onAirportClick: (String) -> Unit,\r\n    modifier: Modifier = Modifier\r\n) {\r\n    LazyColumn(modifier = modifier, contentPadding = PaddingValues(vertical = 8.dp)) {\r\n        items(airports) {\r\n            Row(\r\n                modifier = Modifier\r\n                    .fillMaxWidth()\r\n                    .padding(\r\n                        vertical = 16.dp,\r\n                        horizontal = 16.dp\r\n                    )\r\n                    .clickable(enabled = true) {\r\n                        onAirportClick.invoke(it.iataCode)\r\n                    },\r\n                horizontalArrangement = Arrangement.SpaceBetween\r\n            ) {\r\n                Text(\r\n                    text = it.iataCode,\r\n                    fontWeight = Bold,\r\n                    modifier = Modifier.weight(1f)\r\n                )\r\n                Text(\r\n                    text = it.name,\r\n                    modifier = Modifier.weight(7f)\r\n                )\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n@OptIn(ExperimentalMaterial3Api::class)\r\n@Composable\r\nfun FlightSearchTopAppBar(modifier: Modifier = Modifier) {\r\n    CenterAlignedTopAppBar(\r\n        title = { Text(text = stringResource(id = R.string.app_name)) },\r\n        modifier = modifier\r\n    )\r\n}\r\n\r\n@Preview\r\n@Composable\r\nfun HomeScreenPreview() {\r\n    FlightSearchTheme {\r\n        AirportsScreen(\r\n            airports = List(3) { index ->\r\n                Airport(\r\n                    index,\r\n                    \"Iata Code\",\r\n                    \"Name of Airport\",\r\n                    11111\r\n                )\r\n            },\r\n            onAirportClick = {}\r\n        )\r\n    }\r\n}
+===================================================================
+diff --git a/app/src/main/java/com/example/flightsearch/ui/HomeScreen.kt b/app/src/main/java/com/example/flightsearch/ui/HomeScreen.kt
+--- a/app/src/main/java/com/example/flightsearch/ui/HomeScreen.kt	
++++ b/app/src/main/java/com/example/flightsearch/ui/HomeScreen.kt	
+@@ -32,6 +32,7 @@
+ import com.example.flightsearch.R
+ import com.example.flightsearch.data.Airport
+ import com.example.flightsearch.ui.theme.FlightSearchTheme
++import kotlinx.coroutines.flow.stateIn
+ 
+ enum class HomeScreen {
+     HomeScreen,
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"GRADLE\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	
++++ b/.idea/gradle.xml	
+@@ -7,6 +7,7 @@
+         <option name="testRunner" value="GRADLE" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="gradleJvm" value="jbr-17" />
+         <option name="modules">
+           <set>
+             <option value="$PROJECT_DIR$" />
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_17\" project-jdk-name=\"jbr-17\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	
++++ b/.idea/misc.xml	
+@@ -1,6 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
