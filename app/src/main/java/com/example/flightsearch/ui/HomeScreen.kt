@@ -43,7 +43,7 @@ enum class HomeScreen {
 fun HomeScreen(
     viewModel: HomeScreenViewModel = viewModel(factory = HomeScreenViewModel.factory )
 ) {
-    val searchRequest by viewModel.userPreferencesFlow.collectAsState(initial = "")
+    val searchRequest = viewModel.preferences
     val airportsList by viewModel.getAirports(searchRequest = searchRequest).collectAsState(emptyList())
     val navController = rememberNavController()
     Scaffold(
@@ -138,16 +138,6 @@ fun FlightSearchTopAppBar(modifier: Modifier = Modifier) {
 @Composable
 fun HomeScreenPreview() {
     FlightSearchTheme {
-        AirportsScreen(
-            airports = List(3) { index ->
-                Airport(
-                    index,
-                    "Iata Code",
-                    "Name of Airport",
-                    11111
-                )
-            },
-            onAirportClick = {}
-        )
+        HomeScreen()
     }
 }

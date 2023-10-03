@@ -6,20 +6,18 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->D:\Projects\FlightSearch\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->D:\Projects\FlightSearch\app\src\main\AndroidManifest.xml
 10
 11    <permission
-11-->[androidx.core:core:1.10.1] D:\Projects\Photo Editor\caches\transforms-3\e5855da045abb1059f29ff7edf739aa7\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+11-->[androidx.core:core:1.10.1] D:\Projects\Photo Editor\caches\transforms-3\a88bd8ca858b1f43c01a8ef7fb02e5a5\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
 12        android:name="com.example.flightsearch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.10.1] D:\Projects\Photo Editor\caches\transforms-3\e5855da045abb1059f29ff7edf739aa7\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+12-->[androidx.core:core:1.10.1] D:\Projects\Photo Editor\caches\transforms-3\a88bd8ca858b1f43c01a8ef7fb02e5a5\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
 13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.10.1] D:\Projects\Photo Editor\caches\transforms-3\e5855da045abb1059f29ff7edf739aa7\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+13-->[androidx.core:core:1.10.1] D:\Projects\Photo Editor\caches\transforms-3\a88bd8ca858b1f43c01a8ef7fb02e5a5\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
 14
 15    <uses-permission android:name="com.example.flightsearch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.10.1] D:\Projects\Photo Editor\caches\transforms-3\e5855da045abb1059f29ff7edf739aa7\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.10.1] D:\Projects\Photo Editor\caches\transforms-3\e5855da045abb1059f29ff7edf739aa7\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+15-->[androidx.core:core:1.10.1] D:\Projects\Photo Editor\caches\transforms-3\a88bd8ca858b1f43c01a8ef7fb02e5a5\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.10.1] D:\Projects\Photo Editor\caches\transforms-3\a88bd8ca858b1f43c01a8ef7fb02e5a5\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
 16
 17    <application
 17-->D:\Projects\FlightSearch\app\src\main\AndroidManifest.xml:5:5-27:19
@@ -28,7 +26,7 @@
 19        android:allowBackup="true"
 19-->D:\Projects\FlightSearch\app\src\main\AndroidManifest.xml:7:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.10.1] D:\Projects\Photo Editor\caches\transforms-3\e5855da045abb1059f29ff7edf739aa7\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+20-->[androidx.core:core:1.10.1] D:\Projects\Photo Editor\caches\transforms-3\a88bd8ca858b1f43c01a8ef7fb02e5a5\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 21        android:dataExtractionRules="@xml/data_extraction_rules"
 21-->D:\Projects\FlightSearch\app\src\main\AndroidManifest.xml:8:9-65
 22        android:debuggable="true"
@@ -68,79 +66,79 @@
 40            </intent-filter>
 41        </activity>
 42        <activity
-42-->[androidx.compose.ui:ui-tooling:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\cfb18d2b40ebe8cbaf84786f8a73835f\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:23:9-25:39
+42-->[androidx.compose.ui:ui-tooling:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\488e5bf0705f030fe36eda508126dda4\transformed\ui-tooling-1.3.0\AndroidManifest.xml:23:9-25:39
 43            android:name="androidx.compose.ui.tooling.PreviewActivity"
-43-->[androidx.compose.ui:ui-tooling:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\cfb18d2b40ebe8cbaf84786f8a73835f\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:24:13-71
+43-->[androidx.compose.ui:ui-tooling:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\488e5bf0705f030fe36eda508126dda4\transformed\ui-tooling-1.3.0\AndroidManifest.xml:24:13-71
 44            android:exported="true" />
-44-->[androidx.compose.ui:ui-tooling:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\cfb18d2b40ebe8cbaf84786f8a73835f\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:25:13-36
+44-->[androidx.compose.ui:ui-tooling:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\488e5bf0705f030fe36eda508126dda4\transformed\ui-tooling-1.3.0\AndroidManifest.xml:25:13-36
 45
 46        <service
-46-->[androidx.room:room-runtime:2.5.2] D:\Projects\Photo Editor\caches\transforms-3\f25fdf2e8eeab875dcfad61996e96800\transformed\room-runtime-2.5.2\AndroidManifest.xml:24:9-28:63
+46-->[androidx.room:room-runtime:2.5.2] D:\Projects\Photo Editor\caches\transforms-3\4f40dc46fa908375ac0c70fa26241cdf\transformed\room-runtime-2.5.2\AndroidManifest.xml:24:9-28:63
 47            android:name="androidx.room.MultiInstanceInvalidationService"
-47-->[androidx.room:room-runtime:2.5.2] D:\Projects\Photo Editor\caches\transforms-3\f25fdf2e8eeab875dcfad61996e96800\transformed\room-runtime-2.5.2\AndroidManifest.xml:25:13-74
+47-->[androidx.room:room-runtime:2.5.2] D:\Projects\Photo Editor\caches\transforms-3\4f40dc46fa908375ac0c70fa26241cdf\transformed\room-runtime-2.5.2\AndroidManifest.xml:25:13-74
 48            android:directBootAware="true"
-48-->[androidx.room:room-runtime:2.5.2] D:\Projects\Photo Editor\caches\transforms-3\f25fdf2e8eeab875dcfad61996e96800\transformed\room-runtime-2.5.2\AndroidManifest.xml:26:13-43
+48-->[androidx.room:room-runtime:2.5.2] D:\Projects\Photo Editor\caches\transforms-3\4f40dc46fa908375ac0c70fa26241cdf\transformed\room-runtime-2.5.2\AndroidManifest.xml:26:13-43
 49            android:exported="false" />
-49-->[androidx.room:room-runtime:2.5.2] D:\Projects\Photo Editor\caches\transforms-3\f25fdf2e8eeab875dcfad61996e96800\transformed\room-runtime-2.5.2\AndroidManifest.xml:27:13-37
+49-->[androidx.room:room-runtime:2.5.2] D:\Projects\Photo Editor\caches\transforms-3\4f40dc46fa908375ac0c70fa26241cdf\transformed\room-runtime-2.5.2\AndroidManifest.xml:27:13-37
 50
 51        <activity
-51-->[androidx.compose.ui:ui-test-manifest:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\3fec544383d12cca5615241a138b69b1\transformed\jetified-ui-test-manifest-1.3.0\AndroidManifest.xml:23:9-25:39
+51-->[androidx.compose.ui:ui-test-manifest:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\dae8dd96059e38e91ab222a03c70ae07\transformed\ui-test-manifest-1.3.0\AndroidManifest.xml:23:9-25:39
 52            android:name="androidx.activity.ComponentActivity"
-52-->[androidx.compose.ui:ui-test-manifest:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\3fec544383d12cca5615241a138b69b1\transformed\jetified-ui-test-manifest-1.3.0\AndroidManifest.xml:24:13-63
+52-->[androidx.compose.ui:ui-test-manifest:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\dae8dd96059e38e91ab222a03c70ae07\transformed\ui-test-manifest-1.3.0\AndroidManifest.xml:24:13-63
 53            android:exported="true" />
-53-->[androidx.compose.ui:ui-test-manifest:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\3fec544383d12cca5615241a138b69b1\transformed\jetified-ui-test-manifest-1.3.0\AndroidManifest.xml:25:13-36
+53-->[androidx.compose.ui:ui-test-manifest:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\dae8dd96059e38e91ab222a03c70ae07\transformed\ui-test-manifest-1.3.0\AndroidManifest.xml:25:13-36
 54
 55        <provider
-55-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+55-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
 56            android:name="androidx.startup.InitializationProvider"
-56-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:25:13-67
+56-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:25:13-67
 57            android:authorities="com.example.flightsearch.androidx-startup"
-57-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:26:13-68
+57-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:26:13-68
 58            android:exported="false" >
-58-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:27:13-37
+58-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:27:13-37
 59            <meta-data
-59-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+59-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
 60                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-60-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+60-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
 61                android:value="androidx.startup" />
-61-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+61-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
 62        </provider>
 63
 64        <receiver
-64-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+64-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
 65            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-65-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+65-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
 66            android:directBootAware="false"
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
 67            android:enabled="true"
-67-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
 68            android:exported="true"
-68-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
 69            android:permission="android.permission.DUMP" >
-69-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
 70            <intent-filter>
-70-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
 71                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
 72            </intent-filter>
 73            <intent-filter>
-73-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
 74                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
 75            </intent-filter>
 76            <intent-filter>
-76-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
 77                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
 78            </intent-filter>
 79            <intent-filter>
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
 80                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-80-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-80-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\6bba72a9b139190b90c8670017a201d7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Projects\Photo Editor\caches\transforms-3\194c22b63a248449a2000a7fe905ca3a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
 81            </intent-filter>
 82        </receiver>
 83    </application>

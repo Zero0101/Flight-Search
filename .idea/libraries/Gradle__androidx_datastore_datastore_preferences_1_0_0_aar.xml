@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.datastore:datastore-preferences:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2b717abf49e260073528be8d962a4ac6/transformed/datastore-preferences-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2b717abf49e260073528be8d962a4ac6/transformed/datastore-preferences-1.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2b717abf49e260073528be8d962a4ac6/transformed/datastore-preferences-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Photo Editor/caches/transforms-3/259966fb05564f293f2ceb30d916361f/transformed/datastore-preferences-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Photo Editor/caches/transforms-3/259966fb05564f293f2ceb30d916361f/transformed/datastore-preferences-1.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Photo Editor/caches/transforms-3/259966fb05564f293f2ceb30d916361f/transformed/datastore-preferences-1.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.datastore/datastore-preferences/1.0.0/4565ce3651f3eb5f848481acb16a13defa88ab53/datastore-preferences-1.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Photo Editor/caches/modules-2/files-2.1/androidx.datastore/datastore-preferences/1.0.0/4565ce3651f3eb5f848481acb16a13defa88ab53/datastore-preferences-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

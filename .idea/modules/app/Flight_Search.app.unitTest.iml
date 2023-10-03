@@ -16,70 +16,71 @@
             <stringArg name="classpath">
               <args>
                 <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/d831da77cc74dec1d2804ab9b6fbb651/transformed/navigation-common-2.6.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/f0e736345de7442fe277b75d5389af0a/transformed/navigation-runtime-2.6.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/9c62d5711fd6644f517a44d42d4e5997/transformed/navigation-common-ktx-2.6.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/b83e96110781c9995c901c947625371b/transformed/navigation-runtime-ktx-2.6.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/0585bd5213a916644630dd6a5587ff0f/transformed/navigation-compose-2.6.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/d4016d116d35111d32dea9c64383fccf/transformed/ui-test-manifest-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/47f136cb3090047f86ab149c11168e28/transformed/activity-ktx-1.7.2-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/a55df00e23f42a137f3f6e682cdff586/transformed/activity-compose-1.7.2-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/06df067df45d0913eaf42656e60ee2e8/transformed/activity-1.7.2-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/f30867a6d067cc64171395ed0f0aa0be/transformed/lifecycle-livedata-core-2.6.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.6.1/10f354fdb64868baecd67128560c5a0d6312c495/lifecycle-common-2.6.1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/d0375e6c096ca4a3244512d63203a043/transformed/lifecycle-viewmodel-ktx-2.6.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common-java8/2.6.1/2ad14aed781c4a73ed4dbb421966d408a0a06686/lifecycle-common-java8-2.6.1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/adb7e5f0ccc7ade2b9f72ce0de74a7c3/transformed/lifecycle-viewmodel-2.6.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/f422b7117e7d98e34f65a794a27cdbdf/transformed/lifecycle-viewmodel-savedstate-2.6.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/2461493037bc3954ddf77030f3aafd6e/transformed/core-ktx-1.10.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/8fe1326fbfaafbb283f981aa10ba287c/transformed/core-1.10.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/a35812fcbd4002c2bb11d6337a1d5a4c/transformed/lifecycle-runtime-2.6.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/4841cf36685da2ef49d909f318c1e2fb/transformed/lifecycle-viewmodel-compose-2.6.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/14c56e2e6a6c64ebd65ac10a2ced9ac3/transformed/lifecycle-runtime-ktx-2.6.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/75abd3d5a3cc0b27e70bb2a654eb9c3d/transformed/room-ktx-2.5.2-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/79748e7b6e2a69af090792a9a77d4efd/transformed/ui-tooling-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/4d9b2edab38dafe69552e362a63972ef/transformed/ui-tooling-preview-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/72f7a619f10560836136670a006a73c7/transformed/material3-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/ae831fd9fe7712a26c29f34dd725fb31/transformed/ui-tooling-data-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/3e57a6d0e217ebb68d056d2b9d66c304/transformed/material-ripple-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/f5c26e6ee577e02df94acc15585c6b05/transformed/foundation-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/1ce5fc0e4253ba66656ed4030a1dc73c/transformed/material-icons-core-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/e16438be0c67270027e4aabed5d24038/transformed/animation-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/64444471e78f5407187f4b5e84be48d5/transformed/foundation-layout-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/0b25a377130bb2dc10e2f03f7e099ab7/transformed/ui-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/7b57e27ff58b90e1ea00140c885a6190/transformed/runtime-saveable-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/37c4ad71553929eb20ad8fe0f4dd95e6/transformed/runtime-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/fca3f6cea1910b349da627477ba73ba1/transformed/datastore-preferences-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/ce0c1a68ec789e8ccc0161fe7bbf196f/transformed/datastore-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/30fedf4082ec5b80145daef67f8a9aa7/transformed/animation-core-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.datastore/datastore-preferences-core/1.0.0/403f64499b9a8994f5f7010329ddd1ee5c919ed5/datastore-preferences-core-1.0.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.datastore/datastore-core/1.0.0/91b04fb657294e2906d95dce6a9e5a851f6125c1/datastore-core-1.0.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.4/2c997cd1c0ef33f3e751d3831929aeff1390cb30/kotlinx-coroutines-core-jvm-1.6.4.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.4/f955fc8b2ad196e2f4429598440e15f7492eeb2b/kotlinx-coroutines-android-1.6.4.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/9420fe1c2449b74d63971e613465820c/transformed/room-runtime-2.5.2-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.room/room-common/2.5.2/829a83fb92f1696a8a32f3beea884dfc87b2693/room-common-2.5.2.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.21/67f57e154437cd9e6e9cf368394b95814836ff88/kotlin-stdlib-jdk8-1.8.21.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/c7a264fc44467c37df1094f761c82306/transformed/ui-text-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/21cd53a92de327ed7803f041d8b48b30/transformed/ui-graphics-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.21/7473b8cd3c0ef9932345baf569bc398e8a717046/kotlin-stdlib-jdk7-1.8.21.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/adfb6e502cf93f5fd7266f609f854b2f/transformed/annotation-experimental-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/791e5f273a6e8cd7bec59eab1b92f4ed/transformed/ui-unit-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/3add322c22186da5f82d16b313f6a0a7/transformed/ui-geometry-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/8897a9216c4e455ad7787b0e36887210/transformed/sqlite-framework-2.3.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/e6bb9c3328475a2c307b812ebabcf727/transformed/sqlite-2.3.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/16685a0abf993abdb5de8ca63c22e410/transformed/savedstate-ktx-1.2.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/a366cbf819ff0141131f175e84bcb33e/transformed/savedstate-1.2.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/f07bd1f5f7c3c9902bdd60f907f42061/transformed/versionedparcelable-1.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.2.0/5e1b8b81dfd5f52c56a8d53b18ca759c19a301f3/core-common-2.2.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation-jvm/1.6.0/a7257339a052df0f91433cf9651231bbb802b502/annotation-jvm-1.6.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.21/43d50ab85bc7587adfe3dda3dbe579e5f8d51265/kotlin-stdlib-1.8.21.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.21/d749cd5ae25da36d06e5028785038e24f9d37976/kotlin-stdlib-common-1.8.21.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_app_classes_jar/debug/classes.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/8217bf0adaabaf590ed12c203315626a/transformed/navigation-common-2.6.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/1281499b6a5e5678df1af87380547d71/transformed/navigation-runtime-2.6.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/1bb74c0335c53700539dfb4b4391a2a9/transformed/navigation-common-ktx-2.6.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/3d569ba0d3d854e2e0975f13beabe843/transformed/navigation-runtime-ktx-2.6.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/568ee001a4d960e1342044c69f3da3d8/transformed/navigation-compose-2.6.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/4cb1e7cc56d84bab2f6caa6a25fbb4ca/transformed/ui-test-manifest-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/df7670f913dbc9338eb40e54a4e55b4b/transformed/activity-ktx-1.7.2-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/7a641d8b5597c2b2e05c162151d4c9ff/transformed/activity-compose-1.7.2-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/932b175c29e14af047cede56dcef05e8/transformed/activity-1.7.2-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/a237fdf1cb489ba007b0a632bce49c1a/transformed/lifecycle-livedata-core-2.6.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.6.1/10f354fdb64868baecd67128560c5a0d6312c495/lifecycle-common-2.6.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/c92f78de883cb0031ae17b590a99d092/transformed/lifecycle-viewmodel-ktx-2.6.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common-java8/2.6.1/2ad14aed781c4a73ed4dbb421966d408a0a06686/lifecycle-common-java8-2.6.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/5913d25b294ea1d15eb58a4a71526655/transformed/lifecycle-viewmodel-2.6.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/f58a477e30645bfcc45584da6164c78c/transformed/lifecycle-viewmodel-savedstate-2.6.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/458286c1407e15e4e62f7f8da5346f39/transformed/core-ktx-1.10.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/8db6ccb9c4cfd68c7533bfe903348555/transformed/core-1.10.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/fae5c5f4867fac125c7341ff72e243e7/transformed/lifecycle-runtime-2.6.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/78d7bcf421ddcc8c4c656bc4dcbe703b/transformed/lifecycle-viewmodel-compose-2.6.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/8b0a3fed8bc9225cd78c839bb20c6ff6/transformed/lifecycle-runtime-ktx-2.6.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/d31f210ba503c75d646d74b6ddd9592f/transformed/room-ktx-2.5.2-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/5503895ec9a5a8643881d140da5ac78b/transformed/ui-tooling-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/c3eb08114920c43eb55b823829d5b937/transformed/ui-tooling-preview-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/d074fe34730c2cea32f8e9535ea833a1/transformed/material3-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/143c129c2268ffe9170d4615b335791c/transformed/ui-tooling-data-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/1db04da3f25396ab3d53d045986d668b/transformed/material-ripple-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/078d80b48e10a2d779601271927a6f08/transformed/foundation-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/de008ad2b9ab409547bbf5ac334a4537/transformed/material-icons-core-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/f638bc22b8193af70a052cbca39b97be/transformed/animation-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/61807b71aa5026b5fb4a571838a1733a/transformed/foundation-layout-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/426aa5abecc61a407fc8833a0becb822/transformed/ui-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/efa1331c6ab0b480526ef5fec8e4a751/transformed/runtime-saveable-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/854f0c6330a35963c8f955070b9363cb/transformed/runtime-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/05361623245f246d9c2754c64f294626/transformed/datastore-preferences-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/fb25d5bd93000dcaf86b6cd1a8313b28/transformed/datastore-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/f07c3da60ca94b43b71f5c84f418b5f7/transformed/animation-core-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/androidx.datastore/datastore-preferences-core/1.0.0/403f64499b9a8994f5f7010329ddd1ee5c919ed5/datastore-preferences-core-1.0.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/androidx.datastore/datastore-core/1.0.0/91b04fb657294e2906d95dce6a9e5a851f6125c1/datastore-core-1.0.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.4/2c997cd1c0ef33f3e751d3831929aeff1390cb30/kotlinx-coroutines-core-jvm-1.6.4.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.4/f955fc8b2ad196e2f4429598440e15f7492eeb2b/kotlinx-coroutines-android-1.6.4.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/01f0f42dbac805ceb03558a9e617aa77/transformed/room-runtime-2.5.2-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/androidx.room/room-common/2.5.2/829a83fb92f1696a8a32f3beea884dfc87b2693/room-common-2.5.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.21/67f57e154437cd9e6e9cf368394b95814836ff88/kotlin-stdlib-jdk8-1.8.21.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/6499d2c8ad1cb302b25c73dc0dae78d8/transformed/ui-text-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/6ac5a27f8b691dbcf4ef936e4cf9fe30/transformed/ui-graphics-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.21/7473b8cd3c0ef9932345baf569bc398e8a717046/kotlin-stdlib-jdk7-1.8.21.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/fb6b0dc56b9a5cc0fdfe5209de9338ec/transformed/annotation-experimental-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/ccbd9fa2e2f63466553a99128a8a06c3/transformed/ui-unit-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/4ed3ffd8f6d1d291109fb31c4b728eed/transformed/ui-geometry-1.3.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/a72e19ca3ea731849ef54ab51175053a/transformed/sqlite-framework-2.3.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/bbc6d90ff82ac5c9a2549b2d1c0aadd9/transformed/sqlite-2.3.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/fd848d01c18c60ef41e01ebfb7c93e71/transformed/savedstate-ktx-1.2.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/2b644e5f8bd1e7f4abcc91433e6cb4a1/transformed/savedstate-1.2.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/transforms-3/e9260cc52edf858671a58ac7f2ae85b5/transformed/versionedparcelable-1.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.2.0/5e1b8b81dfd5f52c56a8d53b18ca759c19a301f3/core-common-2.2.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/androidx.annotation/annotation-jvm/1.6.0/a7257339a052df0f91433cf9651231bbb802b502/annotation-jvm-1.6.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.21/43d50ab85bc7587adfe3dda3dbe579e5f8d51265/kotlin-stdlib-1.8.21.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.21/d749cd5ae25da36d06e5028785038e24f9d37976/kotlin-stdlib-common-1.8.21.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
                 <arg>$MODULE_DIR$/../../../../../Android/SDK/platforms/android-33/android.jar</arg>
-                <arg>$MODULE_DIR$/../../../../../Android/SDK/build-tools/30.0.3/core-lambda-stubs.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Android/SDK/build-tools/33.0.1/core-lambda-stubs.jar</arg>
               </args>
             </stringArg>
             <stringArg name="destination" arg="$MODULE_DIR$/../../../app/build/tmp/kotlin-classes/debugUnitTest" />
@@ -99,18 +100,18 @@
             </arrayArg>
             <arrayArg name="pluginClasspaths">
               <args>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.devtools.ksp/symbol-processing/1.8.21-1.0.11/476eef4234348886fe93a761ec4ffc9d095d70b9/symbol-processing-1.8.21-1.0.11.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.8.21/a4a682d55fb788432e4b7bf2ab3acb7a7365fb35/kotlin-compiler-embeddable-1.8.21.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.devtools.ksp/symbol-processing-api/1.8.21-1.0.11/ab020cc6612bf1e9c84484300b16e3ab189005c1/symbol-processing-api-1.8.21-1.0.11.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.21/43d50ab85bc7587adfe3dda3dbe579e5f8d51265/kotlin-stdlib-1.8.21.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.21/d749cd5ae25da36d06e5028785038e24f9d37976/kotlin-stdlib-common-1.8.21.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.8.21/bf43f76b6e29bdc09b6c8a4511a9118b0ab12b1f/kotlin-script-runtime-1.8.21.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.8.21/882003c48db58d16c8fb5a933abf08b5974a1a19/kotlin-daemon-embeddable-1.8.21.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.6.0/330f2244e9030119ab3030fc3fededc86713d9cc/jna-5.6.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.compiler/compiler/1.4.7/21e5a5b013b8b160145c443a54a8ecfb67551849/compiler-1.4.7.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/com.google.devtools.ksp/symbol-processing/1.8.21-1.0.11/476eef4234348886fe93a761ec4ffc9d095d70b9/symbol-processing-1.8.21-1.0.11.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.8.21/a4a682d55fb788432e4b7bf2ab3acb7a7365fb35/kotlin-compiler-embeddable-1.8.21.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/com.google.devtools.ksp/symbol-processing-api/1.8.21-1.0.11/ab020cc6612bf1e9c84484300b16e3ab189005c1/symbol-processing-api-1.8.21-1.0.11.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.21/43d50ab85bc7587adfe3dda3dbe579e5f8d51265/kotlin-stdlib-1.8.21.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.21/d749cd5ae25da36d06e5028785038e24f9d37976/kotlin-stdlib-common-1.8.21.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.8.21/bf43f76b6e29bdc09b6c8a4511a9118b0ab12b1f/kotlin-script-runtime-1.8.21.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.8.21/882003c48db58d16c8fb5a933abf08b5974a1a19/kotlin-daemon-embeddable-1.8.21.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.6.0/330f2244e9030119ab3030fc3fededc86713d9cc/jna-5.6.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Photo Editor/caches/modules-2/files-2.1/androidx.compose.compiler/compiler/1.4.7/21e5a5b013b8b160145c443a54a8ecfb67551849/compiler-1.4.7.jar</arg>
               </args>
             </arrayArg>
             <arrayArg name="pluginOptions">

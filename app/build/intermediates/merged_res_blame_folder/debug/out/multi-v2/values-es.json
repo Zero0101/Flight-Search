@@ -4,24 +4,7 @@
             "outputFile": "com.example.flightsearch.app-mergeDebugResources-2:/values-es/values-es.xml",
             "map": [
                 {
-                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\e5855da045abb1059f29ff7edf739aa7\\transformed\\core-1.10.1\\res\\values-es\\values-es.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,154,256,356,454,561,667,787",
-                        "endColumns": "98,101,99,97,106,105,119,100",
-                        "endOffsets": "149,251,351,449,556,662,782,883"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,26",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,204,306,406,504,611,717,2292",
-                        "endColumns": "98,101,99,97,106,105,119,100",
-                        "endOffsets": "199,301,401,499,606,712,832,2388"
-                    }
-                },
-                {
-                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\b9d3ba9f1237c544d5a92983c8a27c05\\transformed\\jetified-material3-1.0.0\\res\\values-es\\values-es.xml",
+                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\72c3c463e1f4fdd8e5a08a69724bb693\\transformed\\material3-1.0.0\\res\\values-es\\values-es.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\20341d93a3c7f921b6bd6bfdfbef8d0d\\transformed\\jetified-ui-1.3.0\\res\\values-es\\values-es.xml",
+                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\d8bffb9ddbbac1638e0acb5026c8a1a5\\transformed\\ui-1.3.0\\res\\values-es\\values-es.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "837,933,1093,1191,1377,1544,1623,1716,1808,1895,1968,2038,2124,2215,2393,2463",
                         "endColumns": "95,81,97,102,88,78,92,91,86,72,69,85,90,76,69,120",
                         "endOffsets": "928,1010,1186,1289,1461,1618,1711,1803,1890,1963,2033,2119,2210,2287,2458,2579"
+                    }
+                },
+                {
+                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\a88bd8ca858b1f43c01a8ef7fb02e5a5\\transformed\\core-1.10.1\\res\\values-es\\values-es.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,356,454,561,667,787",
+                        "endColumns": "98,101,99,97,106,105,119,100",
+                        "endOffsets": "149,251,351,449,556,662,782,883"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,26",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,204,306,406,504,611,717,2292",
+                        "endColumns": "98,101,99,97,106,105,119,100",
+                        "endOffsets": "199,301,401,499,606,712,832,2388"
                     }
                 }
             ]

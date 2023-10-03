@@ -4,7 +4,7 @@
             "outputFile": "com.example.flightsearch.app-mergeDebugResources-2:/values-sq/values-sq.xml",
             "map": [
                 {
-                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\20341d93a3c7f921b6bd6bfdfbef8d0d\\transformed\\jetified-ui-1.3.0\\res\\values-sq\\values-sq.xml",
+                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\d8bffb9ddbbac1638e0acb5026c8a1a5\\transformed\\ui-1.3.0\\res\\values-sq\\values-sq.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\e5855da045abb1059f29ff7edf739aa7\\transformed\\core-1.10.1\\res\\values-sq\\values-sq.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,154,256,354,451,559,670,792",
-                        "endColumns": "98,101,97,96,107,110,121,100",
-                        "endOffsets": "149,251,349,446,554,665,787,888"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,26",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,204,306,404,501,609,720,2286",
-                        "endColumns": "98,101,97,96,107,110,121,100",
-                        "endOffsets": "199,301,399,496,604,715,837,2382"
-                    }
-                },
-                {
-                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\b9d3ba9f1237c544d5a92983c8a27c05\\transformed\\jetified-material3-1.0.0\\res\\values-sq\\values-sq.xml",
+                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\72c3c463e1f4fdd8e5a08a69724bb693\\transformed\\material3-1.0.0\\res\\values-sq\\values-sq.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "1020,1297,1466",
                         "endColumns": "75,72,76",
                         "endOffsets": "1091,1365,1538"
+                    }
+                },
+                {
+                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\a88bd8ca858b1f43c01a8ef7fb02e5a5\\transformed\\core-1.10.1\\res\\values-sq\\values-sq.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,354,451,559,670,792",
+                        "endColumns": "98,101,97,96,107,110,121,100",
+                        "endOffsets": "149,251,349,446,554,665,787,888"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,26",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,204,306,404,501,609,720,2286",
+                        "endColumns": "98,101,97,96,107,110,121,100",
+                        "endOffsets": "199,301,399,496,604,715,837,2382"
                     }
                 }
             ]

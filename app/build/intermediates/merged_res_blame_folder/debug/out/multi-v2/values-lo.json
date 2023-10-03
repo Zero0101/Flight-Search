@@ -4,7 +4,24 @@
             "outputFile": "com.example.flightsearch.app-mergeDebugResources-2:/values-lo/values-lo.xml",
             "map": [
                 {
-                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\e5855da045abb1059f29ff7edf739aa7\\transformed\\core-1.10.1\\res\\values-lo\\values-lo.xml",
+                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\72c3c463e1f4fdd8e5a08a69724bb693\\transformed\\material3-1.0.0\\res\\values-lo\\values-lo.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,132,208",
+                        "endColumns": "76,75,77",
+                        "endOffsets": "127,203,281"
+                    },
+                    "to": {
+                        "startLines": "11,14,16",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "978,1262,1427",
+                        "endColumns": "76,75,77",
+                        "endOffsets": "1050,1333,1500"
+                    }
+                },
+                {
+                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\a88bd8ca858b1f43c01a8ef7fb02e5a5\\transformed\\core-1.10.1\\res\\values-lo\\values-lo.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\20341d93a3c7f921b6bd6bfdfbef8d0d\\transformed\\jetified-ui-1.3.0\\res\\values-lo\\values-lo.xml",
+                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\d8bffb9ddbbac1638e0acb5026c8a1a5\\transformed\\ui-1.3.0\\res\\values-lo\\values-lo.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,23 +52,6 @@
                         "startOffsets": "811,901,1055,1164,1338,1505,1594,1684,1770,1853,1918,1984,2064,2148,2323,2389",
                         "endColumns": "89,76,108,97,88,88,89,85,82,64,65,79,83,73,65,120",
                         "endOffsets": "896,973,1159,1257,1422,1589,1679,1765,1848,1913,1979,2059,2143,2217,2384,2505"
-                    }
-                },
-                {
-                    "source": "D:\\Projects\\Photo Editor\\caches\\transforms-3\\b9d3ba9f1237c544d5a92983c8a27c05\\transformed\\jetified-material3-1.0.0\\res\\values-lo\\values-lo.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,132,208",
-                        "endColumns": "76,75,77",
-                        "endOffsets": "127,203,281"
-                    },
-                    "to": {
-                        "startLines": "11,14,16",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "978,1262,1427",
-                        "endColumns": "76,75,77",
-                        "endOffsets": "1050,1333,1500"
                     }
                 }
             ]

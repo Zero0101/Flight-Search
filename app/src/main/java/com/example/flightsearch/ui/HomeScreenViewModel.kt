@@ -1,5 +1,8 @@
 package com.example.flightsearch.ui
 
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.APPLICATION_KEY
@@ -10,8 +13,10 @@ import com.example.flightsearch.FlightSearchApplication
 import com.example.flightsearch.data.Airport
 import com.example.flightsearch.data.AirportDao
 import com.example.flightsearch.data.UserPreferencesRepository
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
 
@@ -20,7 +25,16 @@ class HomeScreenViewModel(
     private val userPreferencesRepository: UserPreferencesRepository
     ): ViewModel() {
 
-    val userPreferencesFlow =  userPreferencesRepository.userSearchRequest
+    val userPreferences: StateFlow<String> =  userPreferencesRepository.userSearchRequest.stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5_000),
+        initialValue = ""
+    )
+    var preferences by mutableStateOf("")
+        private set
+    init {
+        preferences = userPreferences.value
+    }
 
     fun getNameByIataCode(iataCode: String): String = airportDao.getNameByIataCode(iataCode)
 
@@ -32,6 +46,7 @@ class HomeScreenViewModel(
     }
 
     fun saveUserSearchRequest(userSearchRequest: String) {
+        preferences = userSearchRequest
         viewModelScope.launch {
             userPreferencesRepository.saveUserSearchRequest(userSearchRequest)
         }

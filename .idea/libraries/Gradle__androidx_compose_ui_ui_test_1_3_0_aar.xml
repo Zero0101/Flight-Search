@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.ui:ui-test:1.3.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5c66c52741092b6372e6634d0b487bf7/transformed/ui-test-1.3.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5c66c52741092b6372e6634d0b487bf7/transformed/ui-test-1.3.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5c66c52741092b6372e6634d0b487bf7/transformed/ui-test-1.3.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Photo Editor/caches/transforms-3/a4df33b238e2af13286e892dc152210b/transformed/ui-test-1.3.0/res" />
+      <root url="file://$PROJECT_DIR$/../Photo Editor/caches/transforms-3/a4df33b238e2af13286e892dc152210b/transformed/ui-test-1.3.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Photo Editor/caches/transforms-3/a4df33b238e2af13286e892dc152210b/transformed/ui-test-1.3.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.ui/ui-test/1.3.0/dba9af134d2966f90877964060647de7ef03033d/ui-test-1.3.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Photo Editor/caches/modules-2/files-2.1/androidx.compose.ui/ui-test/1.3.0/dba9af134d2966f90877964060647de7ef03033d/ui-test-1.3.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
